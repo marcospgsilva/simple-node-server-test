@@ -11,3 +11,7 @@ app.post('/webhooks', (req, res) => {
     console.log(req)
     res.send('POST request to the homepage')
 })
+
+app.get('/', (req, res) => {
+    res.send('Homepage')
+})
